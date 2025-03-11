@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Ce document présente l'architecture logicielle de l'application "Avis" en suivant les principes de la Clean Architecture. L'objectif est de structurer l'application de manière modulaire, en séparant clairement les préoccupations métier des détails d'implémentation (framework, base de données, etc.).
+Ce document présente l'architecture logicielle de l'application "Avis" en suivant les principes de la Clean Architecture, tels qu'ils sont décrits par Oncle Bob. L'objectif est de structurer l'application de manière modulaire, en séparant clairement les préoccupations métier des détails d'implémentation (framework, base de données, etc.).
 
 ## Principes de la Clean Architecture
 
