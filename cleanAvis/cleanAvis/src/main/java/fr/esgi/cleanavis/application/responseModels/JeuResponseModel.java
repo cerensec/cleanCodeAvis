@@ -12,7 +12,16 @@ public class JeuResponseModel {
     private String image;
     private float prix;
 
-    public JeuResponseModel(Long id, String nom, String genre, String classification, String description, LocalDate dateDeSortie, String image, float prix) {
+    public JeuResponseModel(
+            Long id,
+            String nom,
+            String genre,
+            String classification,
+            String description,
+            LocalDate dateDeSortie,
+            String image,
+            float prix
+    ) {
         this.id = id;
         this.nom = nom;
         this.genre = genre;
