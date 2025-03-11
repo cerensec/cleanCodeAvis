@@ -19,4 +19,10 @@ public class PlateformePresenterImpl implements IPlateformePresenter {
     public ModelAndView prepareFailView(List<PlateformeResponseModel> responseModels) {
         return new ModelAndView("plateformes").addObject("plateformes", responseModels);
     }
+
+    @Override
+    public List<PlateformeResponseModel> prepareSuccesRestReesponse(List<PlateformeResponseModel> responseModels) {
+        return responseModels;
+    }
+
 }
