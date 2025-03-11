@@ -4,15 +4,16 @@ import fr.esgi.cleanavis.application.gateway.IJeuGateway;
 import fr.esgi.cleanavis.domain.Jeu;
 import fr.esgi.cleanavis.infrastructure.persistence.entity.JeuEntity;
 import fr.esgi.cleanavis.infrastructure.persistence.repository.JeuJpaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class JeuGatewayImpl implements IJeuGateway {
-    final JeuJpaRepository repository;
+    @Autowired
+    JeuJpaRepository repository;
 
-    public JeuGatewayImpl(JeuJpaRepository repository) {
-        this.repository = repository;
+    public JeuGatewayImpl() {
     }
 
     @Override
