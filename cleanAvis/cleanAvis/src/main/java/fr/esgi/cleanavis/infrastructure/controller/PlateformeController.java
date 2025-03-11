@@ -16,5 +16,4 @@ public class PlateformeController {
     public ModelAndView getPlateformes() {
         return inputBoundary.recupererPlateformes();
     }
-
 }
