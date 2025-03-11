@@ -4,15 +4,16 @@ import fr.esgi.cleanavis.application.gateway.IClassificationGateway;
 import fr.esgi.cleanavis.domain.Classification;
 import fr.esgi.cleanavis.infrastructure.persistence.entity.ClassificationEntity;
 import fr.esgi.cleanavis.infrastructure.persistence.repository.ClassificationJpaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ClassificationGatewayImpl implements IClassificationGateway {
-    final ClassificationJpaRepository repository;
+    @Autowired
+    ClassificationJpaRepository repository;
 
-    public ClassificationGatewayImpl(ClassificationJpaRepository repository) {
-        this.repository = repository;
+    public ClassificationGatewayImpl() {
     }
 
     @Override
