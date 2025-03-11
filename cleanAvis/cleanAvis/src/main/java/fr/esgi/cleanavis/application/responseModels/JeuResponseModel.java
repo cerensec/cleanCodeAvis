@@ -1,5 +1,6 @@
 package fr.esgi.cleanavis.application.responseModels;
 
+import fr.esgi.cleanavis.domain.Editeur;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,6 +17,7 @@ public class JeuResponseModel {
     private LocalDate dateDeSortie;
     private String image;
     private float prix;
+    // private Editeur editeur;
 
     public JeuResponseModel(
             Long id,
@@ -25,7 +27,8 @@ public class JeuResponseModel {
             String description,
             LocalDate dateDeSortie,
             String image,
-            float prix
+            float prix/*,
+            Editeur editeur */
     ) {
         this.id = id;
         this.nom = nom;
@@ -35,6 +38,7 @@ public class JeuResponseModel {
         this.dateDeSortie = dateDeSortie;
         this.image = image;
         this.prix = prix;
+       // this.editeur = editeur;
     }
 
 }
