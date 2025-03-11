@@ -1,7 +1,7 @@
 package fr.esgi.cleanavis.application.interactors.impl;
 
 import fr.esgi.cleanavis.application.gateway.IJeuGateway;
-import fr.esgi.cleanavis.application.interactors.IJeuBoundary;
+import fr.esgi.cleanavis.application.interactors.IJeuInputBoundary;
 import fr.esgi.cleanavis.application.presenters.IJeuPresenter;
 import fr.esgi.cleanavis.application.responseModels.JeuResponseModel;
 import fr.esgi.cleanavis.domain.Jeu;
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class JeuInteractor implements IJeuBoundary {
+public class JeuInteractor implements IJeuInputBoundary {
     private IJeuGateway gateway;
     private final IJeuPresenter presenter;
 
