@@ -1,0 +1,10 @@
+@startuml
+
+[*] -> Brouillon : Avis en cours de rédaction
+Brouillon --> Publié : Le joueur publie l'avis
+Publié --> Validé : Le modérateur a validé la publication de l'avis
+Publié --> Refusé : Le modérateur a rejeté la publication de l'avis
+Validé --> Supprimé : Le joueur a supprimé son avis
+Refusé --> Supprimé : Le modérateur a supprimé l'avis
+
+@enduml
