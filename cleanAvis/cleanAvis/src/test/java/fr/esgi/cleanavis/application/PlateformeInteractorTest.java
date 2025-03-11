@@ -3,9 +3,7 @@ package fr.esgi.cleanavis.application;
 import fr.esgi.cleanavis.application.gateway.IPlateformeGateway;
 import fr.esgi.cleanavis.application.interactors.impl.PlateformeInteractor;
 import fr.esgi.cleanavis.application.presenters.IPlateformePresenter;
-import fr.esgi.cleanavis.application.responseModels.JeuResponseModel;
 import fr.esgi.cleanavis.application.responseModels.PlateformeResponseModel;
-import fr.esgi.cleanavis.domain.Jeu;
 import fr.esgi.cleanavis.domain.Plateforme;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,10 +13,10 @@ import org.mockito.Mockito;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static fr.esgi.cleanavis.utils.PlateformeResponseUtil.createMVResponse;
+import static fr.esgi.cleanavis.utils.PlateformeResponseUtil.createMockPlateformes;
 
 class PlateformeInteractorTest {
 
@@ -35,23 +33,8 @@ class PlateformeInteractorTest {
     @Test
     void shouldRecupererPlateformes() {
         // Given
-        final List<Plateforme> plateformes = new ArrayList<>();
-        final Plateforme plateforme1 = new Plateforme(1L, "PlayStation", null, LocalDate.of(1994, 12, 3));
-        final Plateforme plateforme2 = new Plateforme(2L, "Xbox", null, LocalDate.of(2001, 11, 15));
-        final Plateforme plateforme3 = new Plateforme(3L, "PC", null, LocalDate.of(1980, 1, 1));
-        plateformes.add(plateforme1);
-        plateformes.add(plateforme2);
-        plateformes.add(plateforme3);
-        final List<PlateformeResponseModel> responseModels = plateformes.stream()
-                .map(plateforme -> new PlateformeResponseModel(
-                        plateforme.getId(),
-                        plateforme.getNom(),
-                        plateforme.getDateDeSortie(),
-                        mapJeuxToJeuResponseModel(plateforme.getJeux())
-                ))
-                .collect(Collectors.toList());
-        final ModelAndView mv = new ModelAndView("plateformes");
-        mv.addObject("plateformes", responseModels);
+        final List<Plateforme> plateformes = createMockPlateformes();
+        final ModelAndView mv = createMVResponse();
 
         // When
         Mockito.when(mockedGateway.recupererPlateformes()).thenReturn(plateformes);
@@ -88,23 +71,5 @@ class PlateformeInteractorTest {
         Assertions.assertThat(responsePlateforme1.getJeux()).isEmpty();
         Assertions.assertThat(responsePlateforme2.getJeux()).isEmpty();
         Assertions.assertThat(responsePlateforme3.getJeux()).isEmpty();
-    }
-
-    private List<JeuResponseModel> mapJeuxToJeuResponseModel(List<Jeu> jeux){
-        if (jeux != null) {
-            return jeux.stream()
-                    .map(jeu -> new JeuResponseModel(
-                            jeu.getId(),
-                            jeu.getNom(),
-                            jeu.getGenre().getNom(),
-                            jeu.getClassification().getNom(),
-                            jeu.getDescription(),
-                            jeu.getDateDeSortie(),
-                            jeu.getImage(),
-                            jeu.getPrix()
-                    ))
-                    .collect(Collectors.toList());
-        }
-        return Collections.emptyList();
     }
 }

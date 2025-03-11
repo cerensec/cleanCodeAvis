@@ -16,5 +16,10 @@ public interface IPlateformeInputBoundary {
      */
     ModelAndView recupererPlateformes();
 
+    /**
+     * Recuperer plateformes rest list.
+     *
+     * @return the list
+     */
     List<PlateformeResponseModel> recupererPlateformesRest();
 }
