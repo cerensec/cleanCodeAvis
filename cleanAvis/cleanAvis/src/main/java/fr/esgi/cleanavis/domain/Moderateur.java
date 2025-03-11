@@ -7,6 +7,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class Moderateur extends Utilisateur {
 
     private String numeroDeTelephone;

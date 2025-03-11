@@ -8,7 +8,6 @@ import lombok.ToString;
 
 import java.util.List;
 
-@NoArgsConstructor
 @RequiredArgsConstructor
 @Data
 public class Genre {

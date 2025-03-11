@@ -1,9 +1,6 @@
 package fr.esgi.cleanavis.domain;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
@@ -14,6 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @ToString(callSuper = true)
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class Joueur extends Utilisateur {
 
     private LocalDate dateDeNaissance;
