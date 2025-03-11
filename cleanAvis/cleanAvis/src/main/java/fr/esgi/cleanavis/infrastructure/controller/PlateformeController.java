@@ -9,11 +9,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @AllArgsConstructor
 public class PlateformeController {
-
-    private final IPlateformeInputBoundary inputBoundary;
+    private final IPlateformeInputBoundary plateformeInputBoundary;
 
     @GetMapping({"plateformes"})
     public ModelAndView getPlateformes() {
-        return inputBoundary.recupererPlateformes();
+        return plateformeInputBoundary.recupererPlateformes();
     }
 }

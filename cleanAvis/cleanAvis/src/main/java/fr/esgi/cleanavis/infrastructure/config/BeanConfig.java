@@ -18,35 +18,41 @@ import fr.esgi.cleanavis.application.presenters.impl.PlateformePresenterImpl;
 import fr.esgi.cleanavis.infrastructure.persistence.impl.ClassificationGatewayImpl;
 import fr.esgi.cleanavis.infrastructure.persistence.impl.JeuGatewayImpl;
 import fr.esgi.cleanavis.infrastructure.persistence.impl.PlateformeGatewayImpl;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class BeanConfig {
+    @Bean
     public IPlateformePresenter plateformePresenter() {
         return new PlateformePresenterImpl();
     }
-
+    @Bean
     public IPlateformeGateway plateformeGateway() {
         return new PlateformeGatewayImpl();
     }
-
+    @Bean
     public IPlateformeInputBoundary plateformeInputBoundary(IPlateformePresenter plateformePresenter, IPlateformeGateway plateformeGateway) {
         return new PlateformeInteractor(plateformeGateway, plateformePresenter);
     }
-
+    @Bean
     public IClassificationPresenter classificationPresenter() {return new ClassificationPresenterImpl();    }
+    @Bean
     public IClassificationGateway classificationGateway(){return new ClassificationGatewayImpl();}
+    @Bean
     public IClassificationInputBoudary classificationInputBoudary(
             IClassificationGateway classificationGateway,
             IClassificationPresenter classificationPresenter
     ){
         return new ClassificationInteractor(classificationGateway, classificationPresenter);
     }
-
+    @Bean
     public IJeuGateway jeuGateway(){return new JeuGatewayImpl();}
+    @Bean
     public IJeuPresenter jeuPresenter() {
         return new JeuPresenterImpl();
     }
+    @Bean
     public IJeuInputBoundary jeuInputBoundary (
             IJeuGateway jeuGateway,
             IJeuPresenter jeuPresenter
