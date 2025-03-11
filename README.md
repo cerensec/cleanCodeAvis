@@ -40,7 +40,13 @@ L'application est organisée en plusieurs couches :
 - Contient les détails techniques comme la configuration de la base de données (ex. PostgreSQL, MongoDB), les frameworks web (Spring Boot, Express.js, etc.).
 - Ne doit pas impacter les autres couches.
 
+### UML
+
+- **Diagramme des paquetages**
+![Package diagram](./uml/package-uml.png)
+
 ## Conclusion
 
 L'architecture proposée permet une séparation claire des responsabilités, facilitant la maintenabilité et l'évolutivité de l'application. L'approche Clean Architecture garantit un code structuré et testable, conforme aux bonnes pratiques du développement logiciel.
+
 
