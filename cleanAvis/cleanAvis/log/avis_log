@@ -1,0 +1,124 @@
+2025-03-11T16:30:16.639+01:00  INFO 107436 --- [cleanAvis] [main] f.e.c.i.r.PlateformeRestControllerTest   : Starting PlateformeRestControllerTest using Java 23.0.2 with PID 107436 (started by ds in /home/ds/0_workspace/_IntellJ/cleanCodeAvis/cleanAvis/cleanAvis)
+2025-03-11T16:30:16.640+01:00  INFO 107436 --- [cleanAvis] [main] f.e.c.i.r.PlateformeRestControllerTest   : The following 1 profile is active: "DEV"
+2025-03-11T16:30:17.194+01:00  INFO 107436 --- [cleanAvis] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T16:30:17.231+01:00  INFO 107436 --- [cleanAvis] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2025-03-11T16:30:18.335+01:00  INFO 107436 --- [cleanAvis] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T16:30:18.378+01:00  INFO 107436 --- [cleanAvis] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T16:30:18.407+01:00  INFO 107436 --- [cleanAvis] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T16:30:18.509+01:00  INFO 107436 --- [cleanAvis] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T16:30:18.536+01:00  INFO 107436 --- [cleanAvis] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T16:30:18.688+01:00  INFO 107436 --- [cleanAvis] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:avis user=SA
+2025-03-11T16:30:18.690+01:00  INFO 107436 --- [cleanAvis] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T16:30:18.728+01:00  INFO 107436 --- [cleanAvis] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T16:30:19.224+01:00  INFO 107436 --- [cleanAvis] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T16:30:19.253+01:00  INFO 107436 --- [cleanAvis] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T16:30:20.030+01:00  WARN 107436 --- [cleanAvis] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T16:30:21.576+01:00  INFO 107436 --- [cleanAvis] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-11T16:30:21.577+01:00  INFO 107436 --- [cleanAvis] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-11T16:30:21.584+01:00  INFO 107436 --- [cleanAvis] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path ''
+2025-03-11T16:30:21.596+01:00  INFO 107436 --- [cleanAvis] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 19 ms
+2025-03-11T16:30:21.648+01:00  INFO 107436 --- [cleanAvis] [main] f.e.c.i.r.PlateformeRestControllerTest   : Started PlateformeRestControllerTest in 5.226 seconds (process running for 7.462)
+2025-03-11T16:30:21.765+01:00  INFO 107436 --- [cleanAvis] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [fr.esgi.cleanavis.infrastructure.PlateformeControllerTest]: PlateformeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-03-11T16:30:21.770+01:00  INFO 107436 --- [cleanAvis] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration fr.esgi.cleanavis.CleanAvisApplication for test class fr.esgi.cleanavis.infrastructure.PlateformeControllerTest
+2025-03-11T16:30:21.773+01:00  INFO 107436 --- [cleanAvis] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-03-11T16:30:21.788+01:00  INFO 107436 --- [cleanAvis] [main] f.e.c.i.PlateformeControllerTest         : Starting PlateformeControllerTest using Java 23.0.2 with PID 107436 (started by ds in /home/ds/0_workspace/_IntellJ/cleanCodeAvis/cleanAvis/cleanAvis)
+2025-03-11T16:30:21.788+01:00  INFO 107436 --- [cleanAvis] [main] f.e.c.i.PlateformeControllerTest         : The following 1 profile is active: "DEV"
+2025-03-11T16:30:21.944+01:00  INFO 107436 --- [cleanAvis] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T16:30:21.953+01:00  INFO 107436 --- [cleanAvis] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2025-03-11T16:30:22.143+01:00  INFO 107436 --- [cleanAvis] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T16:30:22.145+01:00  INFO 107436 --- [cleanAvis] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T16:30:22.153+01:00  INFO 107436 --- [cleanAvis] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T16:30:22.154+01:00  INFO 107436 --- [cleanAvis] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-03-11T16:30:22.155+01:00  INFO 107436 --- [cleanAvis] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:avis user=SA
+2025-03-11T16:30:22.156+01:00  INFO 107436 --- [cleanAvis] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-03-11T16:30:22.156+01:00  INFO 107436 --- [cleanAvis] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T16:30:22.273+01:00  INFO 107436 --- [cleanAvis] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T16:30:22.287+01:00  INFO 107436 --- [cleanAvis] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T16:30:22.449+01:00  WARN 107436 --- [cleanAvis] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T16:30:22.776+01:00  INFO 107436 --- [cleanAvis] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-11T16:30:22.777+01:00  INFO 107436 --- [cleanAvis] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-11T16:30:22.780+01:00  INFO 107436 --- [cleanAvis] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path ''
+2025-03-11T16:30:22.786+01:00  INFO 107436 --- [cleanAvis] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2025-03-11T16:30:22.805+01:00  INFO 107436 --- [cleanAvis] [main] f.e.c.i.PlateformeControllerTest         : Started PlateformeControllerTest in 1.032 seconds (process running for 8.62)
+2025-03-11T16:30:22.977+01:00  INFO 107436 --- [cleanAvis] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T16:30:22.979+01:00  INFO 107436 --- [cleanAvis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T16:30:22.980+01:00  INFO 107436 --- [cleanAvis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T16:30:22.984+01:00  INFO 107436 --- [cleanAvis] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T16:30:22.984+01:00  INFO 107436 --- [cleanAvis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-03-11T16:30:22.987+01:00  INFO 107436 --- [cleanAvis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-03-11T16:31:10.275+01:00  INFO 107814 --- [cleanAvis] [main] f.e.c.i.r.PlateformeRestControllerTest   : Starting PlateformeRestControllerTest using Java 23.0.2 with PID 107814 (started by ds in /home/ds/0_workspace/_IntellJ/cleanCodeAvis/cleanAvis/cleanAvis)
+2025-03-11T16:31:10.276+01:00  INFO 107814 --- [cleanAvis] [main] f.e.c.i.r.PlateformeRestControllerTest   : The following 1 profile is active: "DEV"
+2025-03-11T16:31:10.884+01:00  INFO 107814 --- [cleanAvis] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T16:31:10.930+01:00  INFO 107814 --- [cleanAvis] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2025-03-11T16:31:12.058+01:00  INFO 107814 --- [cleanAvis] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T16:31:12.103+01:00  INFO 107814 --- [cleanAvis] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T16:31:12.131+01:00  INFO 107814 --- [cleanAvis] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T16:31:12.237+01:00  INFO 107814 --- [cleanAvis] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T16:31:12.263+01:00  INFO 107814 --- [cleanAvis] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T16:31:12.417+01:00  INFO 107814 --- [cleanAvis] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:avis user=SA
+2025-03-11T16:31:12.419+01:00  INFO 107814 --- [cleanAvis] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T16:31:12.457+01:00  INFO 107814 --- [cleanAvis] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T16:31:13.032+01:00  INFO 107814 --- [cleanAvis] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T16:31:13.067+01:00  INFO 107814 --- [cleanAvis] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T16:31:14.016+01:00  WARN 107814 --- [cleanAvis] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T16:31:15.417+01:00  INFO 107814 --- [cleanAvis] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-11T16:31:15.418+01:00  INFO 107814 --- [cleanAvis] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-11T16:31:15.427+01:00  INFO 107814 --- [cleanAvis] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path ''
+2025-03-11T16:31:15.444+01:00  INFO 107814 --- [cleanAvis] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 26 ms
+2025-03-11T16:31:15.503+01:00  INFO 107814 --- [cleanAvis] [main] f.e.c.i.r.PlateformeRestControllerTest   : Started PlateformeRestControllerTest in 5.471 seconds (process running for 7.515)
+2025-03-11T16:31:15.628+01:00  INFO 107814 --- [cleanAvis] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [fr.esgi.cleanavis.infrastructure.PlateformeControllerTest]: PlateformeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-03-11T16:31:15.633+01:00  INFO 107814 --- [cleanAvis] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration fr.esgi.cleanavis.CleanAvisApplication for test class fr.esgi.cleanavis.infrastructure.PlateformeControllerTest
+2025-03-11T16:31:15.636+01:00  INFO 107814 --- [cleanAvis] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-03-11T16:31:15.660+01:00  INFO 107814 --- [cleanAvis] [main] f.e.c.i.PlateformeControllerTest         : Starting PlateformeControllerTest using Java 23.0.2 with PID 107814 (started by ds in /home/ds/0_workspace/_IntellJ/cleanCodeAvis/cleanAvis/cleanAvis)
+2025-03-11T16:31:15.660+01:00  INFO 107814 --- [cleanAvis] [main] f.e.c.i.PlateformeControllerTest         : The following 1 profile is active: "DEV"
+2025-03-11T16:31:15.841+01:00  INFO 107814 --- [cleanAvis] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T16:31:15.852+01:00  INFO 107814 --- [cleanAvis] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2025-03-11T16:31:16.081+01:00  INFO 107814 --- [cleanAvis] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T16:31:16.083+01:00  INFO 107814 --- [cleanAvis] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T16:31:16.091+01:00  INFO 107814 --- [cleanAvis] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T16:31:16.092+01:00  INFO 107814 --- [cleanAvis] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-03-11T16:31:16.094+01:00  INFO 107814 --- [cleanAvis] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:avis user=SA
+2025-03-11T16:31:16.094+01:00  INFO 107814 --- [cleanAvis] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-03-11T16:31:16.095+01:00  INFO 107814 --- [cleanAvis] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T16:31:16.259+01:00  INFO 107814 --- [cleanAvis] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T16:31:16.276+01:00  INFO 107814 --- [cleanAvis] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T16:31:16.472+01:00  WARN 107814 --- [cleanAvis] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T16:31:16.875+01:00  INFO 107814 --- [cleanAvis] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-11T16:31:16.875+01:00  INFO 107814 --- [cleanAvis] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-11T16:31:16.879+01:00  INFO 107814 --- [cleanAvis] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path ''
+2025-03-11T16:31:16.885+01:00  INFO 107814 --- [cleanAvis] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 10 ms
+2025-03-11T16:31:16.903+01:00  INFO 107814 --- [cleanAvis] [main] f.e.c.i.PlateformeControllerTest         : Started PlateformeControllerTest in 1.267 seconds (process running for 8.916)
+2025-03-11T16:31:17.106+01:00  INFO 107814 --- [cleanAvis] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T16:31:17.107+01:00  INFO 107814 --- [cleanAvis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T16:31:17.109+01:00  INFO 107814 --- [cleanAvis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T16:31:17.112+01:00  INFO 107814 --- [cleanAvis] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T16:31:17.113+01:00  INFO 107814 --- [cleanAvis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-03-11T16:31:17.115+01:00  INFO 107814 --- [cleanAvis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
