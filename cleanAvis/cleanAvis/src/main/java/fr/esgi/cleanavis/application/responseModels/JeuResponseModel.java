@@ -1,7 +1,12 @@
 package fr.esgi.cleanavis.application.responseModels;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDate;
 
+@Getter
+@Setter
 public class JeuResponseModel {
     private Long id;
     private String nom;
