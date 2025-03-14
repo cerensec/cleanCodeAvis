@@ -1,0 +1,25 @@
+@startuml
+actor Utilisateur
+
+participant "JeuController" as Controller
+participant "UseCase AjouterJeu" as UseCase
+participant "JeuMapper" as Mapper
+participant "JeuService" as Service
+participant "JeuRepository" as Repository
+participant "Jeu" as JeuEntity
+
+Utilisateur -> Controller : "POST /jeu" (avec données)
+Controller -> Mapper : Convertir jeuDTO (de la requête)
+Mapper -> UseCase : AjouterJeu(jeuDTO)
+UseCase -> JeuEntity : Validation des données
+UseCase -> Mapper : Convertir jeuEntity en Jeu (pour validation)
+UseCase -> Service : Ajouter jeu (transfert de JeuEntity)
+Service -> Repository : save(Jeu)
+Repository -> Repository : persist le jeu
+Repository -> Service : Jeu persiste
+Service -> UseCase : Jeu ajouté
+UseCase -> Mapper : Convertir jeuEntity (pour réponse)
+UseCase -> Controller : Réponse "Jeu ajouté avec succès"
+Controller -> Utilisateur : "Jeu ajouté avec succès"
+
+@enduml
